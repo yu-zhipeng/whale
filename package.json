@@ -15,6 +15,7 @@
     }
   },
   "dependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "vue": "^3.2.41"
   },
   "devDependencies": {
