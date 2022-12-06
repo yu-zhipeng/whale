@@ -10,3 +10,7 @@ export const calculateDarken = (color: string | number | chroma.Color) => {
 export const calculateAdjacentColor = (color: string | number | chroma.Color) => {
     return chroma(color).darken().hex();
 }
+
+export const calculateAlphaColor = (color: string | number | chroma.Color, alpha: number) => {
+    return chroma(color).alpha(alpha).hex();
+}

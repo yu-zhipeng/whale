@@ -1,6 +1,6 @@
 import { ExtractPropTypes } from 'vue'
 
-export const ButtonType = ['default', 'text']
+export const ButtonType = ['default', 'text', 'dashed', 'primary']
 
 export const ButtonSize = ['large', 'normal', 'small', 'mini'];
 
@@ -29,7 +29,7 @@ export const buttonProps = {
         values: ButtonShape
     },
     color: {
-        type: String,
+        type: String || Number,
     },
     disabled: {
         type: Boolean,
