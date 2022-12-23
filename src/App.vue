@@ -6,7 +6,9 @@
     <h3>button</h3>
     <wButton type="text" @click="handleClick" :color="colorTheme">button1</wButton>
     <h3>table</h3>
-    <wTable :dataSource="dataSource" :columns="columns"></wTable>
+    <div style="width: 500px;margin-left: 50px;" >
+      <wTable :dataSource="dataSource" :columns="columns"></wTable>
+    </div>
   </div>
 </template>
 
@@ -23,19 +25,72 @@ const columns: Columns[] = [{
   title: '姓名',
   field: 'name',
   key: 'name',
+  width: '100px',
+  fixed: 'left',
 },
 {
   title: '年龄',
   field: 'age',
   key: 'age',
+  width: '600px',
 },
 {
   title: '住址',
   field: 'address',
-  key: 'address'
+  key: 'address',
+  width: '100px',
+  fixed: 'right',
 }]
 
 const dataSource = [
+  {
+    key: '1',
+    name: '胡彦斌',
+    age: 32,
+    address: '西湖区湖底公园1号',
+  },
+  {
+    key: '2',
+    name: '胡彦祖',
+    age: 42,
+    address: '西湖区湖底公园1号',
+  },
+  {
+    key: '1',
+    name: '胡彦斌',
+    age: 32,
+    address: '西湖区湖底公园1号',
+  },
+  {
+    key: '2',
+    name: '胡彦祖',
+    age: 42,
+    address: '西湖区湖底公园1号',
+  },
+  {
+    key: '1',
+    name: '胡彦斌',
+    age: 32,
+    address: '西湖区湖底公园1号',
+  },
+  {
+    key: '2',
+    name: '胡彦祖',
+    age: 42,
+    address: '西湖区湖底公园1号',
+  },
+  {
+    key: '1',
+    name: '胡彦斌',
+    age: 32,
+    address: '西湖区湖底公园1号',
+  },
+  {
+    key: '2',
+    name: '胡彦祖',
+    age: 42,
+    address: '西湖区湖底公园1号',
+  },
   {
     key: '1',
     name: '胡彦斌',
